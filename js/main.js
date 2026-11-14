@@ -11,10 +11,10 @@
   const link = (url, key, fill) => url
     ? `<a class="pill${fill ? " pill--fill" : ""}" href="${url}" target="_blank" rel="noopener" data-i18n="${key}"></a>` : "";
   $("#project-list").innerHTML = window.PROJECTS.map((p, i) => `
-    <article class="proj${p.featured ? " proj--feat" : ""}" style="--d:${i}">
-      <div class="proj__img"><img src="${p.image}" alt="${p.name}" width="1000" height="${p.h}" loading="lazy"></div>
+    <article class="proj${p.featured ? " proj--feat" : ""}${p.image ? "" : " proj--text"}" style="--d:${i}">
+      ${p.image ? `<div class="proj__img"><img src="${p.image}" alt="${p.name}" width="1000" height="${p.h}" loading="lazy"></div>` : ""}
       <div class="proj__body rise" style="--d:${i + 2}">
-        <p class="proj__kind" data-i18n="proj.${p.id}.kind"></p>
+        <p class="proj__kind" data-i18n="${p.kindKey || `proj.${p.id}.kind`}"></p>
         <h3 class="proj__name">${p.name}</h3>
         <p data-i18n="proj.${p.id}.desc"></p>
         ${p.goal ? `<p class="proj__goal"><b data-i18n="proj.goal"></b> <span data-i18n="proj.${p.id}.goal"></span></p>` : ""}
