@@ -1,297 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-
-    <link rel="stylesheet" href="./css/index.css">
-
-    <link rel="work" href="./pages/Tela-trabalho.html">
-
-    <!-- Faz a adaptação para outras telas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eduardo Macedo — Full Stack Developer</title>
+  <meta name="description" content="Portfólio de Eduardo Macedo, Full Stack Developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body class="is-loading">
 
-<body>
-    <header>
-        <!-- =================================================navigation bar======================================================== -->
-        <nav>
+  <div class="loader" aria-hidden="true">
+    <span class="loader__n" id="count">0</span>
+    <span class="loader__bar"><i id="bar"></i></span>
+  </div>
 
-            <div class="logo">
-                <h1>THT</h1>
-            </div>
+  <header class="bar">
+    <a class="logo" href="#home" aria-label="Eduardo Macedo">EM</a>
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="./pages/Services.html">Services</a></li>
-                <li><a href="./pages/Tela-trabalho.html">Work</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#home" aria-current="page" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Conhecimentos</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Formação</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+      </ul>
+    </nav>
 
-    <main>
-        <!-- =========================================================================================
-         ================================HOME======================================================== -->
-        <section id="home" class="hero">
-            <div class="hero-content">
+    <div class="tools">
+      <button class="pill" id="lang" type="button">EN</button>
+      <button class="pill pill--fill" id="fb-open" type="button" data-i18n="fb.open">Feedback</button>
+    </div>
+  </header>
 
-                <h1><samp class="building">Building the future</samp>, one project at a time.</h1>
-                <p>Every line of code is written with performance, scalability, and user experience in mind.</p>
-
-                <div class="hero-buttons">
-                    <a href="./pages/Tela-trabalho.html" class="btn-primary">View My Work</a>
-                    <a href=".//my-CV/Curriculo_Eduardo_Macedo.pdf" class="btn-secondary">Download CV</a>
-                </div>
-            </div>
-
-            <div class="code">
-
-            </div>
-
-            <div class="hero-technologies">
-                <h3>Technologies I work with</h3>
-                <div class="hero-technologies-icons">
-                    <img src="./images/html5.png" alt="Ferramenta de desenvolvimento">
-                    <img src="./images/Css.png" alt="Ferramenta de desenvolvimento">
-                    <img src="./images/javascript.png" alt="Ferramenta de desenvolvimento">
-                    <img src="./images/python.png" alt="Ferramenta de desenvolvimento">
-                    <img src="./images/github.png" alt="Ferramenta de desenvolvimento" class="github-img">
-                    <img src="./images/C.png" alt="Ferramenta de desenvolvimento">
-                </div>
-            </div>
-            <div class="hero-visual">
-
-                <div class="hero-image-wrapper">
-                    <div class="Homem-do-Fundo">
-                        <img src="./images/Homem-solo.png"
-                            alt="Um cara ao fundo, usando uma mochila e roupas bem no estilo skatista.">
-                    </div>
-                    <div class="sol-roxo">
-                        <img src="./images/Sol-roxo.png" alt="Um sol roxo derretendo">
-                    </div>
-                </div>
-
-                <div class="hero-boxes">
-                    <div class="ladoD">
-                        <h1>Code</h1>
-                        <p>const debeloper = [<br>
-                            name: <samp>"Eduardo Macedo"</samp>,<br>
-                            skills: [<samp>"HTML", "CSS", "JavaScript", "Python",<br> "C#", "SQL", "Git",
-                                "GitHub"</samp>],<br>
-                            passion:"Building things for the web"<br>
-                        </p>
-                    </div>
-
-                    <div class="ladoD2">
-                        <!-- foto-fundo Neuro Vest -->
-                        <div class="Neuro">
-                            <img src="./images/Neuro.png" alt="">
-                            <div class="Neuro-text">
-                                <h1>My designs in Figma:</h1>
-                                <p>A college activity; role: income monitoring.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- ==================================================================================== -->
-        <section id="about">
-            <div class="All">
-
-                <div class="About">
-                    <h2>ABOUT ME</h2>
-                </div>
-
-                <div class="about-description">
-                    <h1>
-                        I've always liked <samp>technology</samp>, and now I'd like to find a job in my field
-                    </h1>
-                </div>
-
-                <div class="my-esperience">
-
-                    <div>
-                        <img src="./images/icons-calendar.png" alt="">
-                        <h2>4+</h2>
-                        <h3>years of Experience</h3>
-
-                    </div>
-                    <div>
-                        <img src="./images/icons8-dev.png" alt="dev icon">
-                        <h2>10+</h2>
-                        <h3>projects Completed</h3>
-                    </div>
-                    <div>
-                        <img src="./images/icons-happy.png" alt="Um rosto feliz">
-                        <h2>30+</h2>
-                        <h3>happy Clients</h3>
-                    </div>
-                    <div>
-                        <img src="./images/icons-prize.png" alt="">
-                        <h2>100%</h2>
-                        <h3>Client Satisfaction</h3>
-                    </div>
-                </div>
-            </div>
-            <!-- conteúdo do About -->
-        </section>
-        <!-- ============================================================================================== -->
-        <section id="services" class="placeholder">
-            <!-- conteúdo do Services -->
-        </section>
-        <!-- ============================================================================================== -->
-        <section id="work" class="placeholder">
-            <!-- conteúdo do Work -->
-        </section>
-        <!-- ============================================================================================= -->
-        <section id="skills">
-            <h3>My skills</h3>
-            <h1>Technologies I Master</h1>
-
-            <div class="Technologies">
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/html5.png" alt="HTML" class="skill-icon">
-                        <span class="skill-name">HTML</span>
-                        <span class="skill-percent">95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 95%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/Css.png" alt="CSS" class="skill-icon">
-                        <span class="skill-name">CSS</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 90%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/javascript.png" alt="JavaScript" class="skill-icon">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 90%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/python.png" alt="Python" class="skill-icon">
-                        <span class="skill-name">Python</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 80%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/C.png" alt="C#" class="skill-icon">
-                        <span class="skill-name">C#</span>
-                        <span class="skill-percent">75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 75%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/SQL.png" alt="SQL" class="skill-icon">
-                        <span class="skill-name">SQL</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 80%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/icons-git.png" alt="git" class="skill-icon">
-                        <span class="skill-name">git</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 85%;"></div>
-                    </div>
-                </div>
-
-                <div class="skill">
-                    <div class="skill-info">
-                        <img src="./images/github.png" alt="GitHub" class="skill-icon">
-                        <span class="skill-name">GitHub</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-bar-fill" style="width: 90%;"></div>
-                    </div>
-                </div>
-            </div>
-            <!-- conteúdo do Skills -->
-        </section>
-        <!-- =============================================================================================== -->
-        <section id="contact">
-            <!-- conteúdo do Contact -->
-            <div class="contact-heading">
-                <h3>LET'S WORK TOGETHER</h3>
-                <p>Looking for a professional?<br>
-                    Then you've just found one.<br>
-                    I'm currently looking for a new opportunity.</p>
-            </div>
-
-            <div class="contact-subheading">
-                <h3>FOLLOW ME</h3>
-
-                <a href="mailto:1eduardomacedo2525@gmail.com">
-                    <img src="./images/email.png" alt="Imagem de contato Email">1eduardomacedo2525@gmail.com
-                </a>
-                <a href="https://www.linkedin.com/in/eduardo-macedo-1a4667331/?skipRedirect=true" target="_blank">
-                    <img src="./images/linkedin.png" alt="Imagem de contato LinkedIn">LinkedIn
-                </a>
-                <a href="https://github.com/Eduardoborges063" target="_blank" class="github-img">
-                    <img src="./images/github.png" alt="Imagem de contato GitHub">GitHub
-                </a>
-                <div class="whatsapp-line">
-                    <a href="https://wa.me/5549999462714?text=Hello%2C%20my%20name%20is%20%22Your%20Name.%22%20I'm%20reaching%20out%20because%20%22Your%20Company%20Name%22%20is%20currently%20looking%20for%20a%20software%20developer%2C%20and%20I%20would%20like%20to%20schedule%20a%20meeting%20to%20discuss%20the%20opportunity."
-                        target="_blank">
-                        <img src="./images/whatsapp.png" alt="Imagem de contato WhatsApp">(55+)99946-2714
-                    </a>
-                </div>
-            </div>
-
-        </section>
-
-    </main>
-    <!-- ======================================rodapé======================================== -->
-    <footer>
-        <div>
-            <h3>
-                © 2026 Eduardo Macedo.
-                Desenvolvido com utilizando HTML, CSS e JavaScript.
-            </h3>
-            <h3 class="developed-by">Developed by Eduardo Macedo</h3>
+  <main>
+    <section id="home" class="hero">
+      <div class="stage" id="stage">
+        <div class="sun"></div>
+        <div class="name">
+          <p class="first" aria-hidden="true">Eduardo</p>
+          <h1 class="word word--back"><span class="sr">Eduardo </span><span data-split>Macedo</span></h1>
         </div>
+        <img class="figure" src="assets/img/personagem.webp" width="800" height="1200" alt="">
+        <div class="name" aria-hidden="true">
+          <div class="word word--front" data-split="front">Macedo</div>
+        </div>
+      </div>
 
-    </footer>
+      <div class="info">
+        <div class="info__role">
+          <p class="role">Full Stack Developer</p>
+          <p class="tag" data-i18n="hero.tag"></p>
+        </div>
+        <ul class="links">
+          <li><a href="https://github.com/Eduardoborges063" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/eduardo-macedo-1a4667331/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:1eduardomacedo2525@gmail.com">E-mail</a></li>
+          <li><a href="assets/cv/Curriculo_Eduardo_Macedo.pdf" download data-i18n="hero.cv"></a></li>
+        </ul>
+      </div>
+    </section>
 
+    <section id="about" class="about">
+      <h2 class="about__title" data-i18n="about.title"></h2>
+      <div class="bento">
+        <article class="card card--lead">
+          <p class="lead" data-i18n="about.lead"></p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="about.edu.t"></h3>
+          <p class="big">FIAP</p>
+          <p data-i18n="about.edu.c"></p>
+          <p class="muted" data-i18n="about.edu.l"></p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="about.goal.t"></h3>
+          <p data-i18n="about.goal.p"></p>
+        </article>
+        <article class="card card--wide">
+          <h3 data-i18n="about.val.t"></h3>
+          <ul class="chips">
+            <li data-i18n="about.v1"></li>
+            <li data-i18n="about.v2"></li>
+            <li data-i18n="about.v3"></li>
+            <li data-i18n="about.v4"></li>
+            <li data-i18n="about.v5"></li>
+            <li data-i18n="about.v6"></li>
+            <li data-i18n="about.v7"></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2 class="skills__title" data-i18n="skills.title"></h2>
+      <div class="srow">
+        <h3 data-i18n="skills.lang"></h3>
+        <ul class="words words--xl">
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="srow">
+        <h3 data-i18n="skills.tools"></h3>
+        <ul class="words">
+          <li>Next.js</li>
+          <li>Tailwind CSS</li>
+          <li>APIs</li>
+          <li>Oracle Database</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Visual Studio Code</li>
+          <li>IntelliJ IDEA</li>
+        </ul>
+      </div>
+      <div class="srow">
+        <h3 data-i18n="skills.soft"></h3>
+        <ul class="chips">
+          <li data-i18n="skills.s1"></li>
+          <li data-i18n="skills.s2"></li>
+          <li data-i18n="skills.s3"></li>
+          <li data-i18n="skills.s4"></li>
+          <li data-i18n="skills.s5"></li>
+          <li data-i18n="skills.s6"></li>
+          <li data-i18n="skills.s7"></li>
+          <li data-i18n="skills.s8"></li>
+          <li data-i18n="skills.s9"></li>
+          <li data-i18n="skills.s10"></li>
+          <li data-i18n="skills.s11"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="sec-title sec-title--line" data-i18n="proj.title"></h2>
+      <div id="project-list"></div>
+    </section>
+
+    <section id="experience" class="exp">
+      <h2 class="sec-title" data-i18n="exp.title"></h2>
+      <div class="exp__cols">
+        <div>
+          <h3 data-i18n="exp.edu"></h3>
+          <ol class="tl">
+            <li><h4 data-i18n="exp.e1.t"></h4><p data-i18n="exp.e1.d"></p></li>
+            <li><h4 data-i18n="exp.e2.t"></h4><p data-i18n="exp.e2.d"></p></li>
+            <li><h4 data-i18n="exp.e3.t"></h4></li>
+            <li><h4 data-i18n="exp.e4.t"></h4><p data-i18n="exp.e4.d"></p></li>
+            <li><h4>TopWay English School</h4></li>
+          </ol>
+        </div>
+        <div>
+          <h3 data-i18n="exp.work"></h3>
+          <ol class="tl">
+            <li><span class="when">2025 — 2026</span><h4>Expresso São Miguel</h4><p data-i18n="exp.x1.d"></p></li>
+            <li><span class="when">2024 — 2025</span><h4>Myatã</h4><p data-i18n="exp.x2.d"></p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="sec-title sec-title--amber rise" style="--d:0" data-i18n="contact.title"></h2>
+      <p class="contact__lead rise" style="--d:1" data-i18n="contact.lead"></p>
+      <a class="mail rise" style="--d:2" href="mailto:1eduardomacedo2525@gmail.com">1eduardomacedo2525@gmail.com</a>
+      <div class="contact__row rise" style="--d:3">
+        <button class="pill pill--fill" id="copy" type="button" data-i18n="contact.copy"></button>
+        <a class="pill" href="https://www.linkedin.com/in/eduardo-macedo-1a4667331/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="pill" href="https://github.com/Eduardoborges063" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="assets/cv/Curriculo_Eduardo_Macedo.pdf" download data-i18n="hero.cv"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© 2026 Eduardo Macedo</p>
+    <p data-i18n="foot.made"></p>
+  </footer>
+
+  <dialog id="fb" aria-labelledby="fb-title">
+    <form id="fb-form" method="dialog">
+      <h2 id="fb-title" data-i18n="fb.title"></h2>
+      <p class="fb__lead" data-i18n="fb.lead"></p>
+
+      <fieldset class="stars">
+        <legend data-i18n="fb.rating"></legend>
+        <input type="radio" name="rate" id="r5" value="5"><label for="r5" title="5">★</label>
+        <input type="radio" name="rate" id="r4" value="4"><label for="r4" title="4">★</label>
+        <input type="radio" name="rate" id="r3" value="3"><label for="r3" title="3">★</label>
+        <input type="radio" name="rate" id="r2" value="2"><label for="r2" title="2">★</label>
+        <input type="radio" name="rate" id="r1" value="1"><label for="r1" title="1">★</label>
+      </fieldset>
+
+      <label class="field"><span data-i18n="fb.name"></span><input type="text" name="name" autocomplete="name"></label>
+      <label class="field"><span data-i18n="fb.msg"></span><textarea name="msg" rows="4" required></textarea></label>
+
+      <p class="fb__note" data-i18n="fb.note"></p>
+      <div class="fb__actions">
+        <button class="pill" type="button" id="fb-close" data-i18n="fb.close"></button>
+        <button class="pill pill--fill" type="submit" data-i18n="fb.send"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="data/i18n.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>
